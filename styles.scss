@@ -1,0 +1,227 @@
+$bg-container1-color: #E5EFE2;
+$bg-container2-color: #E4E9F3;
+$bg-container3-color: #F4F1E4;
+$font-color: black;
+$container-width: 368px;
+$container-border-radius: 12px;
+$container-margins: 8px;
+
+
+$font-family: 'Raleway', sans-serif;
+$font-weight-headings: 700;
+$font-size-headings: 32px;
+$font-weight-text: 400;
+$font-size-text: 16px;
+$font-size-button: 12px;
+$font-weight-button: 400;
+
+$line-height-headings: 120%;
+$line-height-text: 140%;
+
+$textbox-margin: 24px;
+
+$container-padding: 32px;
+
+
+body {
+    font-family: $font-family;
+}
+
+.containers {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+   ul{
+    display: flex;
+   }
+}
+
+.inner{
+    padding: $container-padding;
+
+}
+
+
+p{
+    max-width: 304px;
+}
+
+.container-1 {
+    background-color: $bg-container1-color;
+    width: $container-width;
+    border-radius: $container-border-radius;
+    display: inline-block;
+    margin-top: $container-margins;
+    margin-bottom: $container-margins;
+    margin-left: $container-margins;
+    margin-right: $container-margins;
+
+    a {
+        font-weight: $font-weight-headings;
+        font-size: $font-size-headings;
+        line-height: $line-height-headings;
+    }
+
+    p {
+        font-weight: $font-weight-text;
+        font-size: $font-size-text;
+        line-height: $line-height-text;
+    }
+
+    .inner{
+
+        .circle{
+            background-color:#428A2F;
+
+        }
+        
+    }
+
+  
+}
+
+.container-2 {
+    background-color: $bg-container2-color;
+    width: $container-width;
+    border-radius: $container-border-radius;
+    display: inline-block;
+    margin-top: $container-margins;
+    margin-bottom: $container-margins;
+    margin-left: $container-margins;
+    margin-right: $container-margins;
+
+
+    a {
+        font-weight: $font-weight-headings;
+        font-size: $font-size-headings;
+        line-height: $line-height-headings;
+    }
+
+    p {
+        font-weight: $font-weight-text;
+        font-size: $font-size-text;
+        line-height: $line-height-text;
+    }
+
+    .inner{
+
+        .circle{
+            background-color: #3D63AC;
+            ;
+        }
+    }
+}
+
+.container-3 {
+    background-color: $bg-container3-color;
+    width: $container-width;
+    border-radius: $container-border-radius;
+    display: inline-block;
+    margin-top: $container-margins;
+    margin-bottom: $container-margins;
+    margin-left: $container-margins;
+    margin-right: $container-margins;
+
+    a {
+        font-weight: $font-weight-headings;
+        font-size: 31px;
+        line-height: $line-height-headings;
+    }
+
+    p {
+        font-weight: $font-weight-text;
+        font-size: $font-size-text;
+        line-height: $line-height-text;
+    }
+
+    .inner{
+
+        .circle{
+            background-color:#B09E3D;
+        }
+    }
+}
+
+.circle{
+    height: 72px;
+    width: 72px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 40px;
+        height: 40px;
+        margin: auto;
+    }
+}
+
+.textbox{
+    margin-top: $textbox-margin;
+    margin-bottom: $textbox-margin;
+}
+
+.button{
+    transition: background 0.40s;
+    background: white;
+    height: 48px;
+    width: 132px;
+    display: flex;
+    justify-content: center;
+    border-radius: 200px;
+    border-color: transparent;
+
+    .inner-button{
+
+        margin: auto;
+
+        a{
+            font-family: $font-family;
+            font-size: $font-size-button;
+            font-weight: $font-weight-button;
+            color: $font-color;
+            text-align: center;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a:visited{
+            text-decoration: none;
+        }
+
+        a:active{
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: none;
+        }
+    
+        img{
+            margin-left: 6px;
+            float: right;
+        }
+
+    }
+}
+
+.button:hover{
+    background-color: black;
+    transition: background 0.40s;
+
+    .inner-button{
+        a{
+            color: white;
+        }
+
+        img{
+            filter: invert(100%)
+        }
+    }
+}
